@@ -13,72 +13,73 @@
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/teclado-razer-cynosa-2.jpg" alt="img_" width="150" height="100"/>
         </a>
         <div class="desc">
-            COMBO X-TUDO + COCA COLA<br>
+            Teclado Razer-Cynosa<br>
             SOMENTE:<br>
-            R$ 15,99.
+            R$ 319,90 .
         </div>
     </div>
 </div>
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/fonyet.jpg" alt="img_" width="100" height="100"/>
         </a>
         <div class="desc">
-            PRATO + COMBO<br>
+            Fonte OnePower ATX 600W<br>
             SOMENTE:<br>
-            R$ 25,90.
+            R$ 147,90.
         </div>
     </div>
 </div>
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/monitor.jpg" alt="img_" width="100" height="100"/>
         </a>
         <div class="desc">
-            PIZZAS (VÁRIOS SABORES) :): <br>
+            Monitor LED tela tela de 18,5" Widescreen AOC E970SWNL <br>
             SOMENTE:<br>
-            R$ 59,99.
+            R$ 385,00.
         </div>
     </div>
 </div>
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/baterec.jpg" alt="img_" width="100" height="100"/>
         </a>
         <div class="desc">
-            PÃO SUPER SAUDAVEL: <br>
+            Bateria Portátil Pineng Pn-999 20000mah Portátil Com Lanterna: <br>
             SOMENTE:<br>
-            R$ 10,25
+            R$ 129,49.
         </div>
     </div>
 </div>
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/hd.jpg" alt="img_" width="100" height="100"/>
         </a>
         <div class="desc">
-            PÃO SUPER SAUDAVEL: <br>
+            1tb Sata 3 64mb 7200rpm 
+            (Disco Rígido) <br>
             SOMENTE:<br>
-            R$ 10,25
+            R$ 219,99.
         </div>
     </div>
 </div>
 <div class="promocao">
     <div class="img">
         <a href="#">
-            <img src="img/samsung_a5.jpg" alt="img_" width="100" height="100"/>
+            <img src="img/placa.jpg" alt="img_" width="100" height="100"/>
         </a>
         <div class="desc">
-            PÃO SUPER SAUDAVEL: <br>
+            Placa de Video Gt 720 - 1gb: <br>
             SOMENTE:<br>
-            R$ 10,25
+            R$ 159,90.
         </div>
     </div>
 </div>
