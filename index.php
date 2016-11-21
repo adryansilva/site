@@ -35,9 +35,9 @@
                 <br> <span>
                     <br>Todos os direitos reservados ITSOLUTION AND CIA - &copy; - 2016. <br>
                 </span>
-                 <div id=h4> ATENDIMENTO </div>
+                <div id=h4> ATENDIMENTO </div>
                 <div id="h5"> Horário de atendimento: 09:00 às 19:00 de segunda à sexta-feira, <p>horário de Brasília (exceto feriados).</p>
-                        Endereço: Rua Santa Cruz, 787 - L1 
+                    Endereço: Rua Santa Cruz, 787 - L1 
                     <br>Centro - Limeira (SP) - CEP: 13480-041
                     <br>Central SAC: (19) 2114-4444
                     <br> E-mail: atendimento@itsolutionecia.com.br</div>
