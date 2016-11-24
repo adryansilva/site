@@ -35,15 +35,18 @@
                 <br> <span>
                     <br>Todos os direitos reservados ITSOLUTION AND CIA - &copy; - 2016. <br>
                 </span>
-                 <div id=h4> ATENDIMENTO </div>
+                <div id=h4> ATENDIMENTO </div>
                 <div id="h5"> Horário de atendimento: 09:00 às 19:00 de segunda à sexta-feira, <p>horário de Brasília (exceto feriados).</p>
-                        Endereço: Rua Santa Cruz, 787 - L1 
+                    Endereço: Rua Santa Cruz, 787 - L1 
                     <br>Centro - Limeira (SP) - CEP: 13480-041
-                    <br>Central SAC: (19) 2114-4444
-                    <br> E-mail: atendimento@itsolutionecia.com.br</div>
+                    <br>Central SAC: (47) 2114-4444
+                   <br> E-mail: atendimento@itsolutionecia.com.br</div>
                 <div id="fb-like">
                     <div id="frame"><iframe src="https://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com%2Faprendizageminformatica2016&width=240&height=250&colorscheme=light&show_faces=true&border_color=%23ffffff&stream=false&header=false&appId=1719850761605142" width="260" height="250" style="border:activeborder;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
                 </div>
+                 <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <span>
+                    <br>Todos os direitos reservados ITSOLUTION AND CIA - &copy; - 2016. <br>
+                </span>
             </div>
         </div>
     </body>

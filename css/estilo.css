@@ -51,7 +51,7 @@ body {
 }
 #container #menu ul li {
     float: left;
-    margin-left: 100px;
+    margin-left: 105px;
 }
 #container #menu ul li a {
     display: block;
@@ -65,7 +65,7 @@ body {
 /*** --------------------------------- CSS PARA O BANNER ------------------------------------ ***/
 #container #footer {
     background-color: #333;
-    height: 400px;
+    height: 410px;
 }
 #h4 {
     color: cornflowerblue;
@@ -73,10 +73,11 @@ body {
     font-family: Verdana;
     font-size: 20px;
     text-align: justify;
-    margin: 15px;
+    padding-top: 20px;
+    padding-left: 120px;
 }
 #frame{float:right;}
-#h5 {float: left; margin: 15px;}
+#h5 {float: left; margin-left: 10px;}
 #container #footer span {
     top: 40%;
     text-align: justify;
@@ -137,7 +138,7 @@ font-family:"Verdana";
 font-size: 13px;
 border-radius: 10px 5px 10px 5px;
 }
-.inicio:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder}
+.inicio:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .produtos {
 width: 100px;
 height: 50px;
@@ -150,7 +151,7 @@ font-family:"Verdana";
 font-size: 13px;
 border-radius: 10px 5px 10px 5px;
 }
-.produtos:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder}
+.produtos:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .servicos {
 width: 100px;
 height: 50px;
@@ -163,7 +164,7 @@ font-family:"Verdana";
 font-size: 13px;
 border-radius: 10px 5px 10px 5px;
 }
-.servicos:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder}
+.servicos:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .contato {
 width: 100px;
 height: 50px;
@@ -176,7 +177,7 @@ font-family:"Verdana";
 font-size: 13px;
 border-radius: 10px 5px 10px 5px;
 }
-.contato:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder}
+.contato:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .sobre {
 width: 100px;
 height: 50px;
@@ -191,3 +192,28 @@ border-radius: 10px 5px 10px 5px;
 }
 .sobre:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder;}
 /** --------------------------- * FIM * PERSONALIZAÇÂO PARA PARA O MENU -------------------------------- **/
+
+
+/** --------------------------- * PRODUTOS * --------------------------- **/
+
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
