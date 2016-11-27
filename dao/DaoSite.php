@@ -152,8 +152,18 @@ class DaoSite {
         return $p_sql->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getProduto($codigo) {
-        $sql = "SELECT * FROM produto WHERE codigo =:codigo";
+     public function getProduto($codigo) {
+        $sql = "SELECT produto.codigo,"
+                . " produto.nome_completo,"
+                . " produto.descricao,"
+                . " produto.preco_custo,"
+                . " produto.imagem,"
+                . " categoria.descricao as categoria"
+                . " FROM produto, categoria"
+                . " WHERE produto.categoria_id = categoria.id"
+                . " AND produto.codigo =:codigo "
+                . " ORDER BY produto.codigo";
+
         $p_sql = Conexao::getInstance()->prepare($sql);
         $p_sql->bindValue(":codigo", $codigo);
         $p_sql->execute();

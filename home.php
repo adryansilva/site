@@ -26,7 +26,7 @@ foreach ($dadosProdutos as $rowProduto) {
   
         <div class="titulo_produto"><?=$rowProduto["nome_completo"]?></div>
         <div class="desc"><?=$rowProduto["descricao"]?></div>
-        <div class="desc"><?=$rowCategoria["descricao"]?></div>
+        <div class="desc"><?= $rowProduto["categoria"] ?></div>
         <div class="desc">R$ <?=$rowProduto["preco_custo"]?></div>
          </a>
         <center><a href="#" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a></center>
