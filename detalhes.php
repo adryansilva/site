@@ -2,8 +2,9 @@
 require_once 'dao/DaoSite.php';
 $DaoSite = DaoSite::getInstance();
 $dadosProdutos = $DaoSite->listar_produto();
+$dadosCategorias = $DaoSite->listar_categoria();
 if (isset($_GET["codigo"])) {
-    $codigo = $_GET["codigo"];
+    $codigo = @$_GET["codigo"];
     $rowProduto = $DaoSite->getProduto($codigo);
 }
 ?>

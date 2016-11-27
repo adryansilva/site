@@ -1,8 +1,9 @@
 <?php
 require_once 'dao/DaoSite.php';
 $DaoSite = DaoSite::getInstance();
+$listaCategorias = $DaoSite->listar_categoria();
 if (isset($_GET["categoria"])) {
-    $categoria = $_GET["categoria"];
+    $categoria = @$_GET["categoria"];
     $dadosProdutos = $DaoSite->getProdutoCategoria($categoria);
 } else {
     $dadosProdutos = $DaoSite->listar_produto();
@@ -29,5 +30,6 @@ if (isset($_GET["categoria"])) {
 
         <?php
     }
+    
     ?>
 </div>

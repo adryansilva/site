@@ -87,7 +87,6 @@ $listaCategorias = $DaoSite->listar_categoria();
                     <div id="frame"><iframe src="https://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com%2Faprendizageminformatica2016&width=240&height=250&colorscheme=light&show_faces=true&border_color=%23ffffff&stream=false&header=false&appId=1719850761605142" width="260" height="250" style="border:activeborder;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
                 </div>
                 <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <span>
-                    <br>Todos os direitos reservados ITSOLUTION AND CIA - &copy; - 2016. <br>
                 </span>
             </div>
                         </div>
