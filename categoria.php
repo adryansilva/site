@@ -1,7 +1,8 @@
 <?php
-require_once 'dao/DaoCategoria.php';
-$DaoCategoria = DaoCategoria::getInstance();
-$dadosCategorias = $DaoCategoria->listar();
+require_once 'dao/DaoSite.php';
+$DaoSite = DaoSite::getInstance();
+$dadosCategorias = $DaoSite->listar_categoria();
+$dadosProdutos = $DaoSite->listar_produto();
 ?>
 <h2>Categorias</h2>
 <?php

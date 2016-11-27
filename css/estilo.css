@@ -2,23 +2,32 @@
     margin: 0px;
     padding: 0px;
 }
+#banner {
+    width: 1100px;   
+    z-index: 1;
+    margin: 20px auto;
+}
 body {
     background-image: url("../img/back.jpg");
     font-family: Arial, Helvetica, sans-serif;
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
 }
 #container {
     width: 1200px;
     background-color: whitesmoke;
-        margin: 50px auto;
-        margin-top: 20px;
+    margin: 50px auto;
+    margin-top: 20px;
 }
 #container #header {
     width: 100%;
     height: 100%;
 }
 #container #menu {
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 110%;
 }
 #container #content {
     width: 100%;    
@@ -45,9 +54,10 @@ body {
 }
 /** ---------------------------------- CSS PARA PARA O MENU --------------------------------------- **/
 #container #menu ul {
+     background-color: #d7d9d8;
     list-style-type: none;
-    overflow: hidden;
-    background-color: #d7d9d8;
+      z-index: 999;
+      padding: 3px auto;
 }
 #container #menu ul li {
     float: left;
@@ -55,12 +65,60 @@ body {
 }
 #container #menu ul li a {
     display: block;
-    color:white;
+    color:black;
     padding: 5px 5px;
     text-decoration: none;
 }
-#container #menu ul li a:hover {
-    background-color: #d7d9d8;
+#container #menu ul li a:hover{
+   background: #0CF; transition: all 0.2s ease-in-out; border-color: activeborder;
+}
+
+li a:hover, .dropdown:hover .produtos {
+   background: #0CF; width: 150px; transition: all 0.2s ease-in-out; border-color: activeborder;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+     font-weight: bold;
+    font-family:"Verdana";
+    font-size: 13px;
+    color:black;
+    background-color: whitesmoke;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 999;
+}
+li.dropdown {
+    display: inline-block;
+    z-index: 999;
+}
+
+.dropdown-content a:hover {background: #0CF; transition: all 0.2s ease-in-out; border-color: activeborder;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.2s ease-in-out; border-color: activeborder;
+}
+.floating-box {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    z-index: 999;
+}
+
+.after-box {
+    border: 3px solid red;
 }
 /*** --------------------------------- CSS PARA O BANNER ------------------------------------ ***/
 #container #footer {
@@ -127,76 +185,85 @@ body {
 }
 /** --------------------------- PERSONALIZAÇÂO PARA PARA O MENU -------------------------------- **/
 .inicio {
-width: 100px;
-height: 50px;
-background: #d7d9d8;
-border: 1px solid #CCC;
-cursor: pointer;
-font-weight: bold;
-color: black;
-font-family:"Verdana";
-font-size: 13px;
-border-radius: 10px 5px 10px 5px;
+    width: 100px;
+    height: 50px;
+    background: #d7d9d8;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-family:"Verdana";
+    font-size: 13px;
+    border-radius: 10px 5px 10px 5px;
+    z-index: 999;
 }
-.inicio:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.inicio:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .produtos {
-width: 100px;
-height: 50px;
-background: #d7d9d8;
-border: 1px solid #CCC;
-cursor: pointer;
-font-weight: bold;
-color: black;
-font-family:"Verdana";
-font-size: 13px;
-border-radius: 10px 5px 10px 5px;
+    width: 100px;
+    height: 50px;
+    background: #d7d9d8;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-family:"Verdana";
+    font-size: 13px;
+    border-radius: 10px 5px 10px 5px;
+    z-index: 999;
 }
-.produtos:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.produtos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .servicos {
-width: 100px;
-height: 50px;
-background: #d7d9d8;
-border: 1px solid #CCC;
-cursor: pointer;
-font-weight: bold;
-color: black;
-font-family:"Verdana";
-font-size: 13px;
-border-radius: 10px 5px 10px 5px;
+    width: 100px;
+    height: 50px;
+    background: #d7d9d8;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-family:"Verdana";
+    font-size: 13px;
+    border-radius: 10px 5px 10px 5px;
+    z-index: 999;
 }
-.servicos:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.servicos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
 .contato {
-width: 100px;
-height: 50px;
-background: #d7d9d8;
-border: 1px solid #CCC;
-cursor: pointer;
-font-weight: bold;
-color: black;
-font-family:"Verdana";
-font-size: 13px;
-border-radius: 10px 5px 10px 5px;
+    width: 100px;
+    height: 50px;
+    background: #d7d9d8;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-family:"Verdana";
+    font-size: 13px;
+    border-radius: 10px 5px 10px 5px;
+    z-index: 999;
 }
-.contato:hover{background: #0CF; width: 160px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.contato:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder;}
 .sobre {
-width: 100px;
-height: 50px;
-background: #d7d9d8;
-border: 1px solid #CCC;
-cursor: pointer;
-font-weight: bold;
-color: black;
-font-family:"Verdana";
-font-size: 13px;
-border-radius: 10px 5px 10px 5px;
+    width: 100px;
+    height: 50px;
+    background: #d7d9d8;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-family:"Verdana";
+    font-size: 13px;
+    border-radius: 10px 5px 10px 5px;
+    z-index: 999;
 }
-.sobre:hover{background: #0CF; width: 160px; transition: all 0.5s ease-in-out; border-color: activeborder;}
+.sobre:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder;}
+
 /** --------------------------- * FIM * PERSONALIZAÇÂO PARA PARA O MENU -------------------------------- **/
 
 
 /** --------------------------- * PRODUTOS * --------------------------- **/
 
-
+a:link 
+{ 
+ text-decoration:none; 
+} 
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
@@ -204,8 +271,20 @@ div.img {
     width: 180px;
 }
 
+div.titulo_produto{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: buttontext;
+    font-family:"Verdana";
+    padding-top: 20px;
+}
 div.img:hover {
     border: 1px solid #777;
+}
+div.img_detalhes {
+    margin-left: 5px;
+    text-align: center;
 }
 
 div.img img {
@@ -213,7 +292,6 @@ div.img img {
     height: auto;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}

@@ -1,26 +1,33 @@
 <?php
-require_once 'dao/DaoProduto.php';
-$DaoProduto = DaoProduto::getInstance();
+require_once 'dao/DaoSite.php';
+$DaoSite = DaoSite::getInstance();
 if (isset($_GET["categoria"])) {
     $categoria = $_GET["categoria"];
-    $dadosProdutos = $DaoProduto->getProdutoCategoria($categoria);
+    $dadosProdutos = $DaoSite->getProdutoCategoria($categoria);
 } else {
-    $dadosProdutos = $DaoProduto->listar();
+    $dadosProdutos = $DaoSite->listar_produto();
 }
 ?>
-<h2>Produtos</h2>
-<?php
-foreach ($dadosProdutos as $rowProduto) {
-    ?>
-    <div class="img">
-        <a href="?pg=detalhes&id=<?=$rowProduto["id"]?>">
-            <img src="http://127.0.0.1/crud/fotos/<?=$rowProduto["imagem"]?>" alt="<?=$rowProduto["descricao"]?>" width="300" height="200">
-        </a>
-        <div class="desc"><?=$rowProduto["descricao"]?></div>
-        <div class="desc"><?=$rowProduto["categoria"]?></div>
-        <div class="desc">R$ <?=$rowProduto["preco"]?></div>
-    </div>
-
+<div class="titulo">
+    <span class="label label-info">Confira Nossos Produtos!</span>
+</div>
+<div class="promocao">
     <?php
-}
-?>
+    foreach ($dadosProdutos as $rowProduto) {
+        ?>
+        <div class="img">
+            <a href="?pg=detalhes&codigo=<?= $rowProduto["codigo"] ?> " style="text-decoration:none">
+                <img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="300" height="200">
+
+                <div class="titulo_produto"><?= $rowProduto["nome_completo"] ?></div>
+                <div class="desc"><?= $rowProduto["descricao"] ?></div>
+                <div class="desc"><?= $rowCategoria["descricao"] ?></div>
+                <div class="desc">R$ <?= $rowProduto["preco_custo"] ?></div>
+            </a>
+            <center><a href="#" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a></center>
+        </div>
+
+        <?php
+    }
+    ?>
+</div>
