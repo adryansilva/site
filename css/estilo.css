@@ -10,7 +10,7 @@
 body {
     background-image: url("../img/back.jpg");
     font-family: Arial, Helvetica, sans-serif;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;  
@@ -54,10 +54,10 @@ body {
 }
 /** ---------------------------------- CSS PARA PARA O MENU --------------------------------------- **/
 #container #menu ul {
-     background-color: #d7d9d8;
+    background-color: #d7d9d8;
     list-style-type: none;
-      z-index: 999;
-      padding: 3px auto;
+    z-index: 999;
+    padding: 3px auto;
 }
 #container #menu ul li {
     float: left;
@@ -70,11 +70,15 @@ body {
     text-decoration: none;
 }
 #container #menu ul li a:hover{
-   background: #0CF; transition: all 0.2s ease-in-out; border-color: activeborder;
+    background: none; transition: all 0.2s ease-in-out; border-color: activeborder;
+}
+#container #menu ul .dropdown .dropdown-content a:hover{
+    background: #0CF;
+    width: 100%;
 }
 
 li a:hover, .dropdown:hover .produtos {
-   background: #0CF; width: 150px; transition: all 0.2s ease-in-out; border-color: activeborder;
+    background: #0CF; width: 150px; transition: all 0.2s ease-in-out; border-color: activeborder;
 }
 
 .dropdown-content {
@@ -83,7 +87,7 @@ li a:hover, .dropdown:hover .produtos {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 999;
-     font-weight: bold;
+    font-weight: bold;
     font-family:"Verdana";
     font-size: 13px;
     color:black;
@@ -197,7 +201,7 @@ li.dropdown {
     border-radius: 10px 5px 10px 5px;
     z-index: 999;
 }
-.inicio:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.inicio:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder;}
 .produtos {
     width: 100px;
     height: 50px;
@@ -211,7 +215,7 @@ li.dropdown {
     border-radius: 10px 5px 10px 5px;
     z-index: 999;
 }
-.produtos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.produtos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder;}
 .servicos {
     width: 100px;
     height: 50px;
@@ -225,7 +229,7 @@ li.dropdown {
     border-radius: 10px 5px 10px 5px;
     z-index: 999;
 }
-.servicos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder}
+.servicos:hover{background: #0CF; width: 140px; transition: all 0.2s ease-in-out; border-color: activeborder;}
 .contato {
     width: 100px;
     height: 50px;
@@ -262,7 +266,7 @@ li.dropdown {
 
 a:link 
 { 
- text-decoration:none; 
+    text-decoration:none; 
 } 
 div.img {
     margin: 5px;
