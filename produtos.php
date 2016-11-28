@@ -18,7 +18,7 @@ if (isset($_GET["categoria"])) {
         ?>
         <div class="img">
             <a href="?pg=detalhes&codigo=<?= $rowProduto["codigo"] ?> " style="text-decoration:none">
-                <img src="http://127.0.0.1/software/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="300" height="200">
+                <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="300" height="200">
 
                 <div class="titulo_produto"><?= $rowProduto["nome_completo"] ?></div>
                 <div class="desc"><?= $rowProduto["descricao"] ?></div>
