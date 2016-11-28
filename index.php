@@ -4,6 +4,7 @@ require_once 'dao/DaoSite.php';
 $DaoSite = DaoSite::getInstance();
 $dadosProdutos = $DaoSite->listar_produto();
 $listaCategorias = $DaoSite->listar_categoria();
+$listar_servico = $DaoSite->listar_servico();
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +37,16 @@ $listaCategorias = $DaoSite->listar_categoria();
                             ?>
                         </div>
                     </li>
-                    <li><a href="?pg=servicos"><input type="button" value="Serviços" class="servicos"/></a></li>
+                    <li class="dropdown">
+                        <a href="?pg=servicos"><input type="button" value="Serviços" class="produtos"/></a>
+                        <div class="dropdown-content">
+                            <?php
+                                foreach ($listar_servico  as $rowServico) {
+                                   echo "<a href='?pg=servicos'{$rowServico["id"]}'>{$rowServico["tipo"]}</a>";
+                                }
+                            ?>
+                        </div>
+                    </li>
                     <li><a href="?pg=contato"><input type="button" value="Contato" class="contato"/></a></li>
                     <li><a href="?pg=sobre"><input type="button" value="Sobre" class="sobre"/></a></li>
                 </ul>

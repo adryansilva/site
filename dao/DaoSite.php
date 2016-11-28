@@ -17,6 +17,19 @@ class DaoSite {
         }
         return self::$instance;
     }
+    public function getservico($id) {
+        $sql = "SELECT * FROM servico WHERE id =:id";
+        $p_sql = Conexao::getInstance()->prepare($sql);
+        $p_sql->bindValue(":id", $id);
+        $p_sql->execute();
+        return $p_sql->fetch(PDO::FETCH_ASSOC);
+    }
+     public function listar_servico() {
+        $sql = "SELECT * FROM servico";
+        $p_sql = Conexao::getInstance()->prepare($sql);
+        $p_sql->execute();
+        return $p_sql->fetchAll(PDO::FETCH_ASSOC);
+    }
      public function getProdutoCategoria($id) {
         $sql = "SELECT produto.codigo,"
                 . " produto.descricao,"
