@@ -67,7 +67,7 @@
                     <label for="mensagem">Mensagem (OPCIONAL):</label><br>
                     <br><textarea>Digite sua mensagem....</textarea><br>
 
-                    <input type="submit" value="Submit"><br>
+                    <input type="submit" value="Enviar"><br>
                 </form><br><br>
             </center>
         </div>

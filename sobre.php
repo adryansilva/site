@@ -21,9 +21,7 @@
     </head>
     <body>
         <div class="center">
-            <h2>História</h2>
-
-<h1>História</h1>
+           <h1>História</h1>
 <br>
 <p>Fundada em 18 de junho de 1998, por Camila Farias, Heric Bitencourt , Andrei Silva, Rafael Gomes.Com o objetivo de propocionar as novas gerações uma integração maior com o mundo tecnológico , criaram a ITSolutons para poder vender uma gama de produtos de ótima qualidade.Ao longo do tempo a loja adquiriu uma nova cara e um novo ramo no ano de 2005 além de venderem produtos inovaram dando suporte aos micros de seus clientes a empresa cresceu ganhou nova sede e expandiu o numero de funcionaros os quais antes haviam apenas 8 hoje contamos com mais de vinte funcionários bem qualificados em suas áreas.</p>
 <br>
