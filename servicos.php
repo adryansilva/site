@@ -20,10 +20,10 @@ if (isset($_GET["servico"])) {
             <a href="?pg=contato"<?= $rowServico["id"] ?> " style="text-decoration:none">
                 <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowServico["imagem"] ?>" alt="<?= $rowServico["tipo"] ?>" width="300" height="200">
 
-                <div class="titulo_produto">Tipo de Serviço:<?= $rowServico["tipo"] ?></div>
-                <div class="desc">Tipos de Problemas: <?= $rowServico["problema"] ?></div>
-                <div class="desc">R$<?= $rowServico["custo"] ?></div>
-                <div class="desc">Descrição: <?= $rowServico["relatorio"] ?></div>
+                <div class="titulo_produto"><b>Tipo de Serviço:</b> <?= $rowServico["tipo"] ?></div>
+                <div class="desc"><b>Tipos de Problemas:</b> <?= $rowServico["problema"] ?></div>
+                <div class="desc"><b>R$</b> <?= $rowServico["custo"] ?></div>
+                <div class="desc"><b>Descrição:</b> <?= $rowServico["relatorio"] ?></div>
             </a>
             <center><a href="?pg=contato" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Entrar em Contato</a></center>
         </div>
