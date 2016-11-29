@@ -21,16 +21,15 @@
     </head>
     <body>
         <div class="center">
-            <h1>História</h1>
+            <h1><b>História</b></h1>
             <br>
             <p>Fundada em 18 de junho de 1998, por Camila Farias, Heric Bitencourt , Andrei Silva, Rafael Gomes.Com o objetivo de propocionar as novas gerações uma integração maior com o mundo tecnológico , criaram a ITSolutons para poder vender uma gama de produtos de ótima qualidade.Ao longo do tempo a loja adquiriu uma nova cara e um novo ramo no ano de 2005 além de venderem produtos inovaram dando suporte aos micros de seus clientes a empresa cresceu ganhou nova sede e expandiu o numero de funcionaros os quais antes haviam apenas 8 hoje contamos com mais de vinte funcionários bem qualificados em suas áreas.</p>
-            <br>
-            <h2>Programa de Descarte</h2>
+            <h2><b>Programa de Descarte</b></h2>
             <p>Placas-Mães, Processadres, Memórias, e outros produtos tem que ter o seu descarte correto por que podem ser prejudicias para o meio ambiente por conta de seu aterial usado na sua produção. Nossa empresa tem a total maneira correta de descarte de produtos eletrônicos.</p>
-            <img src="img/1.png"alt="DESCARTE DE PRODUTOS IMG"/>
+            <center><img src="img/lixo-eletrc3b4nico.jpg" alt="DESCARTE DE PRODUTOS IMG" width="650"/></center>
             <br>
             <br>
-            <p>Horário de atendimento: 09:00 às 19:00 de segunda à sexta-feira,
+            <p><b>Horário de atendimento:</b><br> 09:00 às 19:00 de segunda à sexta-feira,
                 horário de Brasília (exceto feriados).</p>
             <p>Endereço: Rua Santa Cruz, 787 - L1 </p>
             <p>Centro - Limeira (SP) - CEP: 13480-041 </p>

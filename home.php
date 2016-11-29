@@ -19,13 +19,19 @@ $dadosProdutos = $DaoSite->listarHome();
 <div class="promocao">
     <?php
     foreach ($dadosProdutos as $rowProduto) {
+        $descricao = $rowProduto['descricao'];
         ?>
         <div class="img">
             <a href="?pg=detalhes&codigo=<?= $rowProduto["codigo"] ?>" style="text-decoration:none">
                 <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="300" height="200">
-
                 <div class="titulo_produto"><?= $rowProduto["nome_completo"] ?></div>
-                <div class="desc" style="width: 250px; height: 240px; overflow: auto;"><?= $rowProduto["descricao"] ?></div>
+                <?php
+                echo '<div class="desc">';
+                 echo nl2br(
+      substr($descricao, 0, 120));              
+                 echo "<b> ... </b> </div>";  
+                 ?>
+  
                 <div class="desc"><?= $rowProduto["categoria"] ?></div>
                 <div class="desc">R$ <?= $rowProduto["preco_custo"] ?></div>
             </a>
