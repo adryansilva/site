@@ -1,3 +1,8 @@
+<?php
+require_once 'dao/DaoSite.php';
+$DaoSite = DaoSite::getInstance();
+$listar_servico = $DaoSite->listar_servico();
+?>
 <!DOCTYPE html>
 <html>
     <style>
@@ -48,28 +53,40 @@
         <div id="formulario">
             <center>
                 <br>
-                <form action="action_page.php">
+                <form method="post"> 
                     <label for="fname">Nome Completo:</label><br>
-                    <input type="text" id="fname" name="firstname"><br>
+                    <input type="text" id="fname" name="firstname" required=""><br>
 
                     <label for="lname">Cidade:</label><br>
-                    <input type="text" id="lname" name="lastname"><br>
+                    <input type="text" id="lname" name="lastname" required=""><br>
 
-                    <label for="country">Serviço:</label><br>
-                    <select id="country" name="country"><br>
-                        <option value="limpeza">Limpeza</option><br>
-                        <option value="manutenção">manutenção</option><br>
-                        <option value="compra">compra</option><br>
-                        <option value="Formatação">Formatação</option><br>
-                    </select>
+                    <label for="country">Serviço (OPCIONAL):</label><br>
+                    <select name="tipo_servico">
+                <option value="">Selecione o tipo de serviço</option>
+                <?php
+                foreach ($listar_servico as $servico) {
+                        ?>
+                        <option value="<?= $servico["id"] ?>"><?= $servico["tipo"] ?></option>
+                        <?php
+                    }
+                ?>
+            </select>
                     <br>
                     <br>
                     <label for="mensagem">Mensagem (OPCIONAL):</label><br>
                     <br><textarea>Digite sua mensagem....</textarea><br>
 
-                    <input type="submit" value="Enviar"><br>
+                    <button type="submit" name="botao" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-ok"></span><b> Enviar </b></button><br>
                 </form><br><br>
             </center>
         </div>
     </body>
 </html>
+<?php
+if (isset($_POST["botao"])) {
+        echo "<script type='text/javascript'>"
+        . " alert('Mensagem De contato Enviada com Sucesso! Obrigado! Entraremos em contato o mais rápido possivel! !');"
+        . "location.href='?pg=home';"
+        . "</script>;";
+    
+    }

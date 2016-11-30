@@ -24,12 +24,6 @@ class DaoSite {
         $p_sql->execute();
         return $p_sql->fetch(PDO::FETCH_ASSOC);
     }
-     public function listar_servico() {
-        $sql = "SELECT * FROM servico";
-        $p_sql = Conexao::getInstance()->prepare($sql);
-        $p_sql->execute();
-        return $p_sql->fetchAll(PDO::FETCH_ASSOC);
-    }
      public function getProdutoCategoria($id) {
         $sql = "SELECT produto.codigo,"
                 . " produto.descricao,"
@@ -104,6 +98,12 @@ class DaoSite {
     }
     public function listar_pedido() {
         $sql = "SELECT * FROM pedido";
+        $p_sql = Conexao::getInstance()->prepare($sql);
+        $p_sql->execute();
+        return $p_sql->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function listar_servico() {
+        $sql = "SELECT * FROM servico";
         $p_sql = Conexao::getInstance()->prepare($sql);
         $p_sql->execute();
         return $p_sql->fetchAll(PDO::FETCH_ASSOC);

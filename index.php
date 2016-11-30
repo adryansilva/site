@@ -80,11 +80,13 @@ $listar_servico = $DaoSite->listar_servico();
                         include 'home.php';
                     }
                     ?>
+                    <br>
                 </div>
             </div>
             <br>
+            <br>
             <div id="footer">
-                <br> <span>
+         <br> <span>
                     <br>Todos os direitos reservados ITSOLUTION AND CIA - &copy; - 2016. <br>
                 </span>
                 <div id=h4> ATENDIMENTO </div>

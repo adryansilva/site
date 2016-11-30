@@ -11,14 +11,14 @@ if (isset($_GET["servico"])) {
 ?>
 <div class="titulo">
     <span class="label label-info">Confira Nossos Serviços!</span>
-</div>
+</div><br>
 <div class="promocao">
     <?php
     foreach ($dadosservicos as $rowServico) {
         ?>
-        <div class="img">
-            <a href="?pg=contato"<?= $rowServico["id"] ?> " style="text-decoration:none">
-                <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowServico["imagem"] ?>" alt="<?= $rowServico["tipo"] ?>" width="300" height="200">
+        <div class="img_servico">
+            <a href="?pg=contato"<?= $rowServico["id"] ?> style="text-decoration:none;">
+                <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowServico["imagem"] ?>" alt="<?= $rowServico["tipo"] ?>" width="280" height="200">
 
                 <div class="titulo_produto"><b>Tipo de Serviço:</b> <?= $rowServico["tipo"] ?></div>
                 <div class="desc"><b>Tipos de Problemas:</b> <?= $rowServico["problema"] ?></div>

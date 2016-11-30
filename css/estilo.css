@@ -124,7 +124,7 @@ li.dropdown {
 .after-box {
     border: 3px solid red;
 }
-/*** --------------------------------- CSS PARA O BANNER ------------------------------------ ***/
+/*** --------------------------------- CSS PARA OS PRODUTOS ETC.... ------------------------------------ ***/
 #container #footer {
     background-color: #333;
     height: 410px;
@@ -157,21 +157,45 @@ li.dropdown {
     padding-left: 105px;
 }
 .promocao .img {
-    margin: 15px;
+    border: 1px solid #ccc;
+     float: left;
+    width: 250px;
+    height: auto;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    /***  CASO POR LISTA ******************************** width: 80%; ***/
+}
+.promocao .img_servico {
+    margin: 10px;
     border: 1px solid #ccc;
     float: left;
-    width: 280px;
-    padding: 15px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
     border-radius: 10px 10px 10px 10px;
+    background-color: white;
     /***  CASO POR LISTA ******************************** width: 80%; ***/
+}
+.promocao .img img_servico{
+    width: 240px;
+    height: 210px;
+}
+.promocao .img_servico:hover {
+    border: 1px solid #ff0000;
+    border-style: inset;
+    transition:  all 0.5s ease-in-out;
+    background-color: activecaption;
 }
 .promocao .img:hover {
     border: 1px solid #ff0000;
     border-style: inset;
     transition:  all 0.5s ease-in-out;
+    background-color: activecaption;
 }
 .promocao .img img{
-    width: 250px;
+    width: 240px;
     height: 210px;
 }
 .promocao .desc {
@@ -186,6 +210,33 @@ li.dropdown {
     padding: 25px;
     margin: 30px auto;
     font-style: oblique;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.titulo_produto{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    font-family: "Verdana";
+    padding-top: 15px;
+}
+div.img:hover {
+    border: 1px solid #777;
+}
+div.img_detalhes {
+    margin-left: 5px;
+    text-align: center;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
 }
 /** --------------------------- PERSONALIZAÇÂO PARA PARA O MENU -------------------------------- **/
 .inicio {
@@ -268,33 +319,6 @@ a:link
 { 
     text-decoration:none; 
 } 
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.titulo_produto{
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-    color: buttontext;
-    font-family:"Verdana";
-    padding-top: 20px;
-}
-div.img:hover {
-    border: 1px solid #777;
-}
-div.img_detalhes {
-    margin-left: 5px;
-    text-align: center;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
