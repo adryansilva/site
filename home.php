@@ -23,7 +23,7 @@ $dadosProdutos = $DaoSite->listarHome();
         ?>
         <div class="img">
             <a href="?pg=detalhes&codigo=<?= $rowProduto["codigo"] ?>" style="text-decoration:none">
-                <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="230" height="200">
+                <img src="http://itsolution.pe.hu/administracao/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="230" height="200">
                 <div class="titulo_produto"><?= $rowProduto["nome_completo"] ?></div>
                 <?php
                 echo '<div class="desc">';

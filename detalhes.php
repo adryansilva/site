@@ -12,7 +12,7 @@ if (isset($_GET["codigo"])) {
     <span class="label label-success">Detalhes do Produto:</span>
 </div>
 <div class="img_detalhes"><br>
-    <img src="http://127.0.0.1/gestao_itsolution/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="250" height="250"><h3><?= $rowProduto["descricao"] ?></h3><br>
+    <img src="http://itsolution.pe.hu/administracao/fotos/<?= $rowProduto["imagem"] ?>" alt="<?= $rowProduto["nome_completo"] ?>" width="250" height="250"><h3><?= $rowProduto["descricao"] ?></h3><br>
 </div>
 <br>
 <div class="panel panel-primary" style="width: 40%; float: none; margin-left: 345px;"> <br><center><div class="titulo">Categoria: <?= $rowProduto["categoria"] ?> <br><?= $rowProduto["nome_completo"] ?></div></center><div class="titulo">Vendido e entregue por g-fire
